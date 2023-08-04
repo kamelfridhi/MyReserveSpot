@@ -1,0 +1,56 @@
+﻿@model ClientWeb.Models.MemberShip.UserModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    
+    .login-block, .signin-block {
+        
+        padding: 100px;
+        margin-bottom: 20px;
+         
+    }
+
+    /* Style pour le titre */
+    .block-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+</style>
+
+<div class="text-center">
+    <h1>Welcom to MyReserveSpot</h1>
+    <h1>THE MOST FLEXIBLE RESERVATION SYSTEM YOU'LL EVER FIND</h1>
+    <h2>Reserve now</h2>
+   
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="login-block">
+            <h3 class="block-title">Login</h3>
+            <p>If you already have an account, click the button below to log in.</p>
+            <a href="@Url.Action("Login", "Accounts")" class="btn btn-primary">Log In</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="signin-block">
+            <h3 class="block-title">Create Account</h3>
+            <p>If you don't have an account yet, click the button below to create one.</p>
+            <a href="@Url.Action("SignIn", "Accounts")" class="btn btn-success">Create Account</a>
+        </div>
+    </div>
+</div>
+<img src="/wwwroot/res.jpg" alt="res">
+
+<div class="text-center">
+<h2>
+    Booking system for every business type
+</h2>
+<h3>
+    If you’re close to giving up on finding online reservation software which will work precisely as you need, you've finally found the right scheduling system! MyReserveSpot is an online reservation system which can be used by any business taking bookings: for days, nights, hours or minutes, or scheduled events.
+</h3>
+</div>
+

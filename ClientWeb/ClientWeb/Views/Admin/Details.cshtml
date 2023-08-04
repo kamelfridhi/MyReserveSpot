@@ -1,0 +1,21 @@
+﻿@model ClientWeb.Models.MemberShip.UserModel
+
+<h2>Détails de l'utilisateur</h2>
+
+@if (Model != null)
+{
+    <div>
+        <h4>Nom : @Model.Name</h4>
+        <h4>Email : @Model.Email</h4>
+        <h4>Reservations:</h4>
+ 
+    </div>
+}
+else
+{
+    <p>L'utilisateur n'a pas été trouvé.</p>
+}
+
+<p>
+    <a asp-controller="Admin" asp-action="Dashboard" class="btn btn-primary">Retour au tableau de bord</a>
+</p>

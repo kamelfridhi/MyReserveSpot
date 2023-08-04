@@ -1,0 +1,32 @@
+﻿@model ClientWeb.Models.Reservation.ReservationModel
+
+@{
+    ViewData["Title"] = "Reservation";
+}
+<h1>Reservation Form</h1>
+
+<form asp-action="Reservation" method="post">
+    <div class="form-group">
+        <label>Title :</label>
+        <input asp-for="Title" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Description :</label>
+        <input asp-for="Description" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Arrival date :</label>
+        <input asp-for="FirstReservationDate" type="date" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label>Date of departure :</label>
+        <input asp-for="LastReservationDate" type="date" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Reservation</button>
+</form>
+<div class="right-side">
+    <a href="@Url.Action("SubReservation", "SubReservation")" class="action-button">Create SubReservation</a>
+</div>
+

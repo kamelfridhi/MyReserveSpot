@@ -1,0 +1,38 @@
+﻿@model List<ClientWeb.Models.MemberShip.UserModel>
+
+<h1>Admin Dashboard</h1>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Name</td>
+                    <td>@user.Email</td>
+                    <td></td> 
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                        <a href="@Url.Action("Delete", "Admin", new { Email = user.Email })" class="btn btn-danger">Delete</a>
+                        <a href="@Url.Action("Details", "Admin", new { name = user.Name })" class="btn btn-info">View</a>
+                    </td>
+                </tr>
+                
+
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Aucun utilisateur n'a été trouvé.</p>
+}

@@ -1,0 +1,27 @@
+﻿/* ClientWeb.styles.css */
+
+/* Styles pour la page index */
+body {
+    background-color: #87CEEB; /* Couleur bleu ciel pour le fond de la page */
+}
+
+.text-center h1 {
+    color: #00008B; /* Couleur bleu foncé pour le titre h1 */
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    background-color: #00008B; /* Couleur bleu foncé pour la barre de navigation */
+}
+
+.navbar-brand {
+    color: #87CEEB; /* Couleur bleu ciel pour le nom de l'application dans la barre de navigation */
+}
+
+.navbar-nav .nav-link {
+    color: #87CEEB; /* Couleur bleu ciel pour les liens de navigation dans la barre de navigation */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #FFF; /* Couleur blanche pour les liens de navigation au survol dans la barre de navigation */
+    }

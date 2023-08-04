@@ -1,0 +1,14 @@
+﻿@model ClientWeb.Models.MemberShip.SignInViewModel
+@{
+    ViewData["Title"] = "Success";
+    Layout = "~/Views/Shared/_Layout.cshtml"; // Assuming you have a shared layout
+}
+
+<h1>Account Created Successfully!</h1>
+
+<p>Congratulations, your account has been created successfully. You can now log in with your credentials.</p>
+
+
+
+<p>Thank you for signing up!</p>
+<a href="@Url.Action("Login", "Accounts")" class="btn btn-link">Login</a>

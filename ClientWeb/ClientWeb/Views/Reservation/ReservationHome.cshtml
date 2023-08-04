@@ -1,0 +1,85 @@
+﻿@model ClientWeb.Controllers.Reservation.ReservationController
+
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .left-side {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-side {
+        flex: 1;
+    }
+
+    .action-button {
+        background-color: #007BFF;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .action-button:hover {
+            background-color: #0056b3;
+        }
+
+    h2 {
+        color: #007BFF;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left side with buttons -->
+        <div class="left-side">
+            <a href="@Url.Action("Reservation", "Reservation")" class="action-button">Create Reservation</a>
+            <a href="@Url.Action("SubReservation", "SubReservation")" class="action-button">Create SubReservation</a>
+            <a href="@Url.Action("AfficheReservations", "Reservation")" class="action-button">My Reservations</a>
+            
+            
+        </div>
+
+        <!-- Right side with description -->
+        <div class="right-side">
+            <h2>Create a Reservation</h2>
+            <p>
+                MyReserveSpot:
+                "Create Your Own Reservation: Enjoy the Freedom to Customize Your Experience"
+            </p>
+        </div>
+    </div>
+</body>
+</html>
